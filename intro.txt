@@ -1,2 +1,74 @@
+1-
 What is a DS?
 A Data Structure is a way of organizing data so that it can be used effectively.
+
+2-
+Computational Complexity Analysis:
+How much TIME & SPACE does an algorithm need for its computation.
+
+3-
+Big-O Notation:
+It tells us the maximum time required to an algorithm. It deals with worst case
+
+4-
+Some complexities ordered from smallest to largest:
+(NOTE: n is the size of the input)
+constant time      | O(1)
+Logarithmic time   | O(log(n))
+Linear time        | O(n)
+Linearithmic time  | O(nlog(n))
+Quadratic time        | O(n^2)
+Cubic time         | O(n^3)
+Exponential time   | O(b^n), b > 1
+Factorial time     | O(n!)
+
+5-
+Some Properties of Big-O notation:
+O(n + c) = O(n)
+O(cn) = O(n), c > 0
+
+6-
+Let f() describes the running time of a particular algorithm for an input of size n:
+f(n) = 7log(n^3) + 15(n^2) + 2(n^3) + 8
+Then big-O of f(n) will be:
+O(f(n)) = O(n^3) {As the highest power of n is 3}
+
+7- 
+The following code will run in a CONSTANT time:
+a = 1
+b = 2
+c = a + b * 4
+i = 0
+while i < 11 do{
+    i = i + 1
+}
+Since the above code is not depended on the size of input. So it will run in a constant time.
+There for time Complexity is O(1).
+
+8-
+The following program run in a LINEAR time: O(n)
+first program:
+i = 0
+while i < n do{
+    i = i + 1
+}
+f(n) = n
+O(f(n))  = O(n)
+
+second program:
+i = 0
+while i < n do{
+    i = i + 3
+}
+f(n) = n / 3
+O(f(n)) = O(n)
+
+9-
+The following programs will run in Quadratic time:
+for (i=0, i < n, i++){
+    for (j=0,j < n, j++){
+
+    }
+}
+f(n) = n * n 
+O(f(n)) = O(n^2)
